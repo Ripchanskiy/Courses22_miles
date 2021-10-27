@@ -11,7 +11,9 @@
   "rules": {
     "semi": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-unused-vars": "off",
     "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off",
     "prettier/prettier": [
       "error", {
         "semi": false
