@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { useForm } from "react-hook-form"
+import { fetchUsers } from "Services/user"
+import UserCard from "Components/UserCard"
 import styles from "./styles.module.sass"
-import { fetchUsers } from "../../services/user"
-import UserCard from "../../components/UserCard"
 import Navigation from "./components/Navigation"
 
 const Users = () => {

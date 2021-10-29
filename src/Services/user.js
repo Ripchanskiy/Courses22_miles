@@ -1,8 +1,6 @@
 import { api } from "./api"
 
 export const fetchUsers = async ({ results, gender, nationality } = {}) => {
-  // eslint-disable-next-line no-console
-  console.log(nationality)
   const params = {
     results: results || 15,
     // https://medium.com/@slamflipstrom/conditional-object-properties-using-spread-in-javascript-714e0a12f496

@@ -1,4 +1,4 @@
-import Users from "../../scenes/Users"
+import Users from "Scenes/Users"
 import PageTemplate from "../PageTemplate"
 
 const App = () => (

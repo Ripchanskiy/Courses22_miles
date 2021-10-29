@@ -1,8 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { nationality } from "../../../../constants/nationality"
-import { gender } from "../../../../constants/gender"
-import Select from "../../../../components/Select"
+import { nationality } from "Utils/constants/nationality"
+import { gender } from "Utils/constants/gender"
+import Select from "Components/Select"
 
 import styles from "./styles.module.sass"
 
