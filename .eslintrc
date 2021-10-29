@@ -8,11 +8,13 @@
     "jsx-a11y",
     "prettier"
   ],
+//  https://github.com/yannickcr/eslint-plugin-react/tree/master/docs/rules
   "rules": {
     "semi": 0,
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-unused-vars": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off",
     "prettier/prettier": [
       "error", {
