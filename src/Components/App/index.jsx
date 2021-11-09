@@ -1,10 +1,13 @@
-import Users from "Scenes/Users"
+import { BrowserRouter } from "react-router-dom"
+import Routing from "Components/Routing"
 import PageTemplate from "../PageTemplate"
 
 const App = () => (
-  <PageTemplate>
-    <Users />
-  </PageTemplate>
+  <BrowserRouter>
+    <PageTemplate>
+      <Routing />
+    </PageTemplate>
+  </BrowserRouter>
 )
 
 export default App

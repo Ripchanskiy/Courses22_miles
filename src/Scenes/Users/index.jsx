@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useForm } from "react-hook-form"
 import { fetchUsers } from "Services/user"
 import UserCard from "Components/UserCard"
+import useQueryParams from "Hooks/useQueryParams"
 import styles from "./styles.module.sass"
 import Navigation from "./components/Navigation"
 
@@ -19,8 +20,13 @@ const Users = () => {
     onFetchUsers()
   }, [])
 
-  const onSubmit = (data) => onFetchUsers(data)
+  const onSubmit = (data) => {
+    onFetchUsers(data)
+  }
 
+  const { gender, nationality } = useQueryParams()
+  // eslint-disable-next-line no-console
+  console.log(gender, nationality)
   return (
     <div>
       <Navigation
