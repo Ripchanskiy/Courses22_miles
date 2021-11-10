@@ -1,13 +1,16 @@
 import { api } from "./api"
 
-export const fetchUsers = async ({ results, gender, nationality } = {}) => {
+export const fetchUsers = async (formData = {}) => {
   const params = {
-    results: results || 15,
-    // https://medium.com/@slamflipstrom/conditional-object-properties-using-spread-in-javascript-714e0a12f496
-    ...(gender && { gender }),
-    ...(nationality?.length && { nat: nationality.join(",") }),
+    results: 15,
     // круто, если кто-то воспользуется этой возможностью
     inc: "gender,email,dob,name,picture,nat",
+    // https://medium.com/@slamflipstrom/conditional-object-properties-using-spread-in-javascript-714e0a12f496
+    // ...(formData.gender && { gender: formData.gender }),
+    // ...(formData.nat && { nat: formData.nat }),
+    // ...(nat && { nat }),
+    // В самом конце для оверрайда дефолтных параметров(results и inc)
+    ...formData,
   }
 
   const response = await api

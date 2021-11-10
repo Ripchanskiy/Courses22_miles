@@ -4,7 +4,7 @@ import { Gender } from "../constants/gender"
 // (т.к. эти значения обычно нужны API и должны быть везде одинаковые, такие какие принимает API )
 // label - используется для показа обычного текста и не является данными для API.
 // Здесь константы менее важны, но желательно тоже использовать по возможности
-export const gender = [
+export default [
   { label: "all", value: "" },
   { label: "male", value: Gender.Male },
   { label: "female", value: Gender.Female },

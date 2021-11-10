@@ -1,4 +1,4 @@
-export const nationalities = [
+export default [
   { label: "au", value: "au" },
   { label: "br", value: "br" },
   { label: "ca", value: "ca" },
