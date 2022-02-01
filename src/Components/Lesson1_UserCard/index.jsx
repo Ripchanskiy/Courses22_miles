@@ -40,7 +40,7 @@ UserCard.propTypes = {
 }
 
 UserCard.defaultProps = {
-  test: "",
+  test: "+++++++++++++",
 }
 
 export default UserCard

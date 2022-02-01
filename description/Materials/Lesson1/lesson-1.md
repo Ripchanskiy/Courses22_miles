@@ -311,6 +311,33 @@ https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopl
 ![image description](9.png)
 
 
+https://youtu.be/Q8HpJQ9x2D0
+А сам по себе реакт- просто html со стейтом и инструментами для его удобного менеджмента ну
+и пусть виртуалдом(нам это сейчас не важно, на вью или ангуляр будет работать также +,~) плюс комьюнити , популярность и удобство
+-improve readability (jsx)
+Jsx - react templating language
+-берет на себя манипуляции с Dom
+Убирает кучу екстракода
+
+Multi page application
+⁃ простой пример с сервером и возвратом обычной html
+
+Сборка современного проекта
+
+CRA
+⁃ react scripts (что там)
+⁃ Webpack (loaders)
+⁃ Babel (Jsx и es6)
+⁃ CSS/sass to css
+⁃ Minimizer bundle
+⁃ Аглифаер
+⁃ Три шейкер
+⁃ Dev server
+⁃ Hot reload
+
+Билд (процес обработки апки в обычный html, css, js)
+
+
 ДЗ 
 - установить node и npm(yarn)
 - установить CRA
