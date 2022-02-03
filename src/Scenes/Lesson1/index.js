@@ -4,9 +4,6 @@ import UserCard from "Components/Lesson1_UserCard"
 import styles from "./styles.module.sass"
 
 const Lesson1 = () => {
-  // eslint-disable-next-line no-console
-  console.log(users)
-
   // const usersList = users.map((user) => <li>{user.name}</li>)
   // eslint-disable-next-line no-console
   // console.log(usersList)
@@ -49,7 +46,6 @@ const Lesson1 = () => {
   // использование компонента UserCard
   const usersList = users.map((user) => <UserCard user={user} key={user.id} />)
   // eslint-disable-next-line no-console
-  console.log(usersList)
   return (
     <div className={styles.users}>
       <ul className={styles.users__list}>{usersList}</ul>

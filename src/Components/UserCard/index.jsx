@@ -14,7 +14,7 @@ const TomatoButton = styled(ButtonComponent)`
 `
 
 const GreenButton = styled(ButtonComponent)`
-  color: green;
+  color: var(--blue);
   border-color: green;
 `
 

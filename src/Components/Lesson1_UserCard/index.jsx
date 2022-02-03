@@ -11,18 +11,14 @@ import { Gender } from "Utils/constants/gender"
 
 // вывод user, default values и proptypes
 
-const UserCard = (props) => {
+const UserCard = ({ user, test }) => (
   // eslint-disable-next-line no-console
-  console.log(props)
-  const { user, test } = props
-  return (
-    <li key={user.id}>
-      {user.gender === Gender.Female
-        ? `Miss ${user.name}${test}`
-        : `Mr. ${user.name}`}
-    </li>
-  )
-}
+  <li key={user.id}>
+    {user.gender === Gender.Female
+      ? `Miss ${user.name}${test}`
+      : `Mr. ${user.name}`}
+  </li>
+)
 
 // неправильный тип user
 
