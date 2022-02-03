@@ -12,6 +12,8 @@ import { Gender } from "Utils/constants/gender"
 // вывод user, default values и proptypes
 
 const UserCard = (props) => {
+  // eslint-disable-next-line no-console
+  console.log(props)
   const { user, test } = props
   return (
     <li key={user.id}>

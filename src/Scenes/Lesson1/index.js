@@ -48,7 +48,8 @@ const Lesson1 = () => {
   //
   // использование компонента UserCard
   const usersList = users.map((user) => <UserCard user={user} key={user.id} />)
-
+  // eslint-disable-next-line no-console
+  console.log(usersList)
   return (
     <div className={styles.users}>
       <ul className={styles.users__list}>{usersList}</ul>

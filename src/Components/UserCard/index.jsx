@@ -1,6 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components"
 import styles from "./styles.module.sass"
+import cssStyles from "./styles.module.css"
+
+const ButtonComponent = styled.button`
+  height: 20px;
+`
+
+const TomatoButton = styled(ButtonComponent)`
+  color: tomato;
+  border-color: tomato;
+`
+
+const GreenButton = styled(ButtonComponent)`
+  color: green;
+  border-color: green;
+`
 
 const UserCard = ({ user }) => {
   const { gender, email, dob, name, picture, nat } = user
@@ -8,6 +24,15 @@ const UserCard = ({ user }) => {
 
   return (
     <li className={styles.userCard}>
+      <div className="global_style_example global_style_example_2">
+        Global styles example
+      </div>
+      <div style={{ backgroundColor: "red" }}>Global styles example</div>
+      <div className={cssStyles.global_style_example}>
+        CSS-module styles example
+      </div>
+      <TomatoButton> Button tomato</TomatoButton>
+      <GreenButton> Button green</GreenButton>
       <div className={styles.userCard__container}>
         <img
           src={picture.large}
