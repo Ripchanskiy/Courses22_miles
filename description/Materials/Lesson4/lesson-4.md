@@ -20,6 +20,26 @@ https://github.com/typicode/husky
 для тестов
 "test": "react-scripts test --watchAll=false",
 
+Для абсолютных
+jsconfig.json //add to root folder
+{
+"compilerOptions": {
+"baseUrl": "src"
+},
+"include": ["src"]
+}
+
+add to eslint
+"settings": {
+    "import/resolver": {
+    "node": {
+    "paths": ["src"]
+    }
+  }
+}
+
+https://create-react-app.dev/docs/adding-custom-environment-variables/
+env - для окружений а не для секьюрности (на фронте)
 
 - Внутреннее состояние компонента
 - Изменение состояния
@@ -28,3 +48,10 @@ https://github.com/typicode/husky
 - event target, currentTarget
 - Подъем состояния
 - props drilling
+
+rsf -live template
+1. метод получения юзеров и обновления стейта юзеров (будем юзать аксиос) https://axios-http.com/docs/example
+    1.1 пример получения и вывода юзеров через аксиос
+2. 2 селекта для выбора национальностей и гендера
+3. Параметры сохраняем в стейт
+4. кнопка для отправки запроса на получение юзеров по параметрам из стейта
