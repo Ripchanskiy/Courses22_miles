@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.4.2",
+    "@mui/styled-engine-sc": "^5.4.2",
     "@sentry/react": "6.17.4",
     "@sentry/tracing": "6.17.4",
     "axios": "0.24.0",
@@ -47,9 +51,9 @@
   "devDependencies": {
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.3.0",
+    "eslint-config-react-app": "6.0.0",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-config-react-app": "6.0.0",
     "husky": "7.0.0",
     "lint-staged": "11.2.4",
     "prettier": "2.4.1"

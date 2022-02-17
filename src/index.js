@@ -7,7 +7,7 @@ import initSentry from "Utils/helpers/centry"
 
 // production only
 // sentry.io/organizations/milestep-dw/issues/?project=6183624&query=is%3Aunresolved
-initSentry()
+// initSentry()
 
 ReactDOM.render(
   <React.StrictMode>
